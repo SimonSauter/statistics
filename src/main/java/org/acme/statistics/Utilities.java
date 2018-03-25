@@ -1,5 +1,4 @@
 package org.acme.statistics;
-
 import java.math.BigDecimal;
 import java.math.RoundingMode;
 import java.time.Instant;
@@ -20,7 +19,7 @@ public class Utilities {
         return (Instant.now().toEpochMilli() - 60000);
     }
 
-    public static boolean transactionOlderThan60Seconds (Transaction transaction, Long sixtySecondsAgo) {
+    public static boolean transactionOlderThan60Seconds(Transaction transaction, Long sixtySecondsAgo) {
         return (transaction.getTimestampMillis() < sixtySecondsAgo) ? true : false;
     }
 
